@@ -1,12 +1,11 @@
 // script.js
 document.addEventListener("DOMContentLoaded", function () {
-  window.addEventListener("load", function () {
-    setTimeout(function () {
+    window.addEventListener("load", function () {
       const preloader = document.getElementById("preloader");
       preloader.style.display = "none";
-    }, 1000);
+    });
   });
-});
+  
 
 const btnScrollToTop = document.querySelector(".btn-scroll-to-top");
 
