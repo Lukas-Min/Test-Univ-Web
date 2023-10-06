@@ -1,0 +1,430 @@
+.scrollable-news::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.scrollable-news {
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+.close-scroll::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.close-scroll {
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+* {
+    padding: 5;
+    margin: 0;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+}
+
+.section-2 {
+    min-height: 100vh;
+    background-color: #7d1935;
+    background-position: center;
+    background-size: cover;
+    display:flex
+}
+
+.bg-custom {
+  background-color: #7d1935;
+}
+.bg-white {
+  background-color: white;
+}
+.title {
+  text-align: center;
+}
+.s-2-title {
+    font-weight: 400;
+}
+
+.news-item {
+    background-color: #7d19355b;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    /* Hide scrollbars while loading */
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(#1c1c1cb5, #1c1c1cb5), url('../img/sample-preloader-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    /* Set a high z-index to place it above other content */
+}
+
+.loader {
+    width: 200px;
+    /* Set the width and height to match your image dimensions */
+    height: 200px;
+    background-image: url('/resource/img/Bauan-University-Logo-Seal.png');
+    /* Replace 'circle-loader.png' with the path to your circular image */
+    background-size: cover;
+    animation: spin 2s linear infinite;
+    z-index: 10000;
+    /* Ensure loader is on top of the overlay */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.logo {
+    height: 70px;
+}
+
+.header {
+    min-height: 100vh;
+    background-image: linear-gradient(hsla(0, 0%, 11%, 0.90), hsla(0, 0%, 11%, 0.900)), url('../img/sample-univ-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 10px;
+}
+
+.header-text{
+    font-weight: bold;
+}
+
+.card1 {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.nav-bg-custom {
+    background-color: #7d1935;
+    box-shadow: 0px 3px 0 rgba(0, 0, 0, 0.300);
+}
+
+.btn-jb {
+    color: white
+}
+
+.loading-logo {
+    height: 500px;
+    width: 300px;
+}
+
+.text-custom {
+    color: #7d1937;
+}
+
+.bg-custom {
+    background-color: #7d1937;
+}
+
+.collapse-text {
+    text-align: justify;
+}
+
+.border {
+    border-radius: 20px;
+}
+
+.section-2 {
+    display: flex;
+    min-height: 100vh;
+    max-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* overflow: hidden; */
+}
+
+.close-scroll-news::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.close-scroll {
+    max-height: 88vh;
+    overflow-y: scroll;
+}
+
+.shadow-s2{
+    box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, 0.300);
+}
+
+.carousel-bg {
+    background-color: hsla(343, 67%, 29%, 0.700);
+    border-radius: 20px;
+}
+
+.carousel-bg-s-3 {
+    background-color: hsla(0, 0%, 100%, 0.750);
+    border-radius: 20px;
+}
+
+.card:hover .card-body {
+    background-color: rgb(238, 238, 238);
+    color: rgb(0, 0, 0);
+
+}
+
+.card:hover .news-title {
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card:hover {
+    background-color: rgb(238, 238, 238);
+    border: none;
+}
+
+.card:hover .card-header {
+    background-color: #7d1935;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.read-more-btn:hover {
+    background-image: linear-gradient(#7d1935, #580f0f);
+    color: #fff;
+    transition: background-image 0.3s, color 0.3s;
+}
+
+.read-more:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.read-more-btn {
+    border-radius: 10px;
+}
+
+.news-title {
+    color: #7d1935;
+}
+
+.jumbo-btn:hover {
+    color: white;
+    background-image: linear-gradient(#7d1935, #580f0f);
+}
+
+.jumbotron-1,
+.jumbotron-2 {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.jumbotron-2{
+    margin-bottom: 50px;
+}
+
+.btn-maroon {
+    background-color: #7D1935;
+
+}
+
+.btn-maroon:hover {
+    background-image: linear-gradient(#7d1935, #580f0f);
+}
+
+.bg-maroon {
+    background-color: #7d1935;
+}
+
+.footer {
+    background-image: linear-gradient(hsla(0, 0%, 11%, 0.90), hsla(0, 0%, 11%, 0.900)), url('../img/footer-bg.jpg');; /* Maroon background color */
+    color: white;  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-scroll-to-top{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: #7D1935;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 9998;
+    display: none;
+}
+
+.btn-scroll-to-top:hover{
+    background: #7D1935;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-hr {
+    border-color: white;
+}
+
+.footer-p-size{
+    font-size: 18px;
+}
+
+.footer-p-color{
+    color: white;
+}
+
+.footer-padding{
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.footer-link{
+    position: relative;
+    color: white;
+}
+
+.footer-link:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-link:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+  .footer-link:hover:before {
+    transform: scaleX(1);
+  }
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons-a {
+    text-decoration: none;
+}
+
+.social-icons-img {
+    width: 30px; /* Adjust the size of your icons */
+    height: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-banner {
+    height: 150px;
+    position: bottom;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.footer-top-div{
+    display: inline-block;
+}
+
+.centered-div {
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    color: white;
+    min-height: 5vh;
+}
+
+
+.padding-section-3 {
+    background: #7D1935;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-inner,
+.jumbo-s-4 {
+    border-radius: 20px;
+}
+
+.border-r {
+    box-shadow: 100px;
+}
+
+.section-3 {
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background: #7D1935;
+    padding-bottom: 70px;
+}
+
+/* .jumbo-s-4 {
+    padding-bottom: 50px;
+    padding-top: 40px;
+} */
+
+.row-3{
+    top: 50%;
+    left: 50%;
+}
+
+
+.custom-carousel-caption{
+    max-width: max-content;
+}
+
+.custom-carousel-caption p {
+    font-size: 14px; 
+    margin-bottom: 0; 
+}
+
+.custom-carousel-caption h5 {
+    font-size: 16px; 
+    margin-bottom: 0; 
+}
+
+.color-change:hover{
+    filter: brightness(75%);
+}
