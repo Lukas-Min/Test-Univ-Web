@@ -1,11 +1,21 @@
 // script.js
 document.addEventListener("DOMContentLoaded", function () {
-    window.addEventListener("load", function () {
-      const preloader = document.getElementById("preloader");
-      preloader.style.display = "none";
-    });
-  });
-  
+    
+    setTimeout(function () {
+        hideLoader();
+    },0); // Adjust the delay as needed
+
+    function hideLoader() {
+        // Find the loader container element
+        const loaderContainer = document.querySelector(".loader-container");
+
+        // Set its display style to "none" to hide it
+        loaderContainer.style.display = "none";
+
+        // Show the scrollbars
+        document.body.style.overflow = "auto";
+    }
+});
 
 const btnScrollToTop = document.querySelector(".btn-scroll-to-top");
 
