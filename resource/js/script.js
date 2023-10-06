@@ -1,9 +1,9 @@
 // script.js
 document.addEventListener("DOMContentLoaded", function () {
-
-    window.onload = function () {
+    
+    setTimeout(function () {
         hideLoader();
-    }
+    }, 2000); // Adjust the delay as needed
 
     function hideLoader() {
         // Find the loader container element
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const btnScrollToTop = document.querySelector(".btn-scroll-to-top");
 
-btnScrollToTop.addEventListener("click", function () {
+btnScrollToTop.addEventListener("click", function(){
 
     window.scrollTo({
         top: 0,
@@ -30,7 +30,7 @@ btnScrollToTop.addEventListener("click", function () {
 
 const scrollToTopButton = document.getElementById('scroll-to-top-button');
 
-window.addEventListener('scroll', function () {
+window.addEventListener('scroll', function() {
     if (window.scrollY === 0) {
         scrollToTopButton.style.display = 'none';
     } else {
